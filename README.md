@@ -4,7 +4,7 @@
 
 Remap the buttons of your mouse under GNU/Linux.
 
-### [Download the last AppImage](./qmice-remap-x86_64.AppImage)
+[![Download as an AppImage](https://docs.appimage.org/_images/download-appimage-banner.svg)](https://github.com/josepuga/qmice-remap/releases)
 
 [English doc](doc/README.md)
 

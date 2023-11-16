@@ -10,7 +10,7 @@ QMice no puede leer (de momento) los datos de los ratones del sistema. En su lug
 
 - **Si tu ratón no está en la lista** puedes hacer este proceso manualmente con comandos de consola tal y como se explica en la siguiente página (en inglés). <https://askubuntu.com/questions/1145057/remapping-mouse-buttons-to-keyboard-keysXXX>.
 
-Si con dicha página consigues remapear tu ratón, **puedes crear un perfil para que otros usuarios se beneficien de ello**. Tienes un tutorial de cómo hacerlo [aquí.](./tutorial-create-profile-ES)
+Si con dicha página consigues remapear tu ratón, **puedes crear un perfil para que otros usuarios se beneficien de ello**. Tienes un tutorial de cómo hacerlo [aquí.](./tutorial-create-profile-ES.md)
 
 - **Si tu ratón está en la lista...**
 

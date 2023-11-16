@@ -6,11 +6,11 @@
 
 #### For troubleshooting look [here.](./troubleshooting-EN.md)
 
-QMice cannot (at the moment) read data from system mouses. Instead it works with profiles, which are .conf files created by users. They contain the hardware data of a specific mouse. In this way, the Kernel can access it and "remap" it.
+QMice cannot (yet) read data from system mouses. Instead it works with profiles, which are .conf files created by users. They contain the hardware data of a specific mouse. In this way, the Kernel can access it and "remap" it.
 
 - **If your mouse is not on the list** you can do this process manually with console commands as explained on the next page . <https://askubuntu.com/questions/1145057/remapping-mouse-buttons-to-keyboard-keysXXX>.
 
-If with this page you manage to remap your mouse, you can create a profile so that other users can benefit from it. You have a tutorial on how to do it [here.](./tutorial-create-profile-EN)
+If with this page you manage to remap your mouse, you can create a profile so that other users can benefit from it. You have a tutorial on how to do it [here.](./tutorial-create-profile-EN.md)
 
 - **If your mouse is on the list..**
 

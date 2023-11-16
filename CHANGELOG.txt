@@ -1,0 +1,5 @@
+0.1.0
+    - First Release.
+    - Profiles:
+        Logitech USB Trackball (old model) - By José Puga
+        Kensintong Expert Mouse - By José Puga

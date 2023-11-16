@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=qmice-remap
+Exec=qmice-remap
+#256x256 png
+Icon=qmice-remap
+Type=Application
+Categories=Settings
+Terminal=true

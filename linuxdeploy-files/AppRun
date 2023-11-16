@@ -1,0 +1,8 @@
+#!/bin/bash
+config_path=$HOME/.config/qmice-remap
+profiles_path=$config_path/profiles
+this_dir="$(readlink -f "$(dirname "$0")")"
+[ -d "$profiles_path" ] || mkdir -p "$profiles_path"
+[ -f "$config_path/qmice-remap.ini" ] || cp "$this_dir/data/qmice-remap.ini" "$config_path"
+cp "$this_dir/data/profiles/"*.profile "$profiles_path"
+exec "$APPDIR/usr/bin/qmice-remap"

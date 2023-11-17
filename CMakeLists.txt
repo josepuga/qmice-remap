@@ -8,7 +8,7 @@ endif()
 # Create a file named. version.h.in with those lines:
 # #define APP_NAME "@PROJECT_NAME@"
 # #define VERSION_STRING "@VERSION_STRING@"
-set(VERSION_STRING "0.1.0")
+set(VERSION_STRING "0.1.1")
 set(APP_NAME "QMice Remap")
 
 project(

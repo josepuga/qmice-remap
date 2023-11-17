@@ -1,8 +1,6 @@
 # QMice Remap
 
-## IMPORTANT: This App only works on Wayland
-
-Remap the buttons of your mouse under GNU/Linux.
+### Remap the buttons of your mouse under GNU/Linux.
 
 [![Download as an AppImage](https://docs.appimage.org/_images/download-appimage-banner.svg)](https://github.com/josepuga/qmice-remap/releases)
 

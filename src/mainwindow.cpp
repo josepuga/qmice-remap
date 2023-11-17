@@ -197,7 +197,7 @@ void MainWindow::applyChanges() {
     QProcess process;
     process.setEnvironment(QProcess::systemEnvironment());
     auto commands {QString::fromStdString(
-        fmt::format("cp {} {} && udevadm control --reload-rules && udevadm trigger", tmpFileName, hwdbFileName))};
+        fmt::format("cp {} {} && systemd-hwdb update && udevadm control --reload-rules && udevadm trigger", tmpFileName, hwdbFileName))};
     process.start("pkexec", QStringList() << "bash" << "-c" << commands);
     process.waitForFinished();
     if (process.exitCode()) {

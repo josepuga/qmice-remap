@@ -11,7 +11,7 @@ comments=Old model. Logitech (not logi) Marble Mouse.
 bustype=0003
 vendor=046d
 product=c408
-version=0111
+version=0110
 
 # KEYBOARD_KEY=ACTION
 # Keep KEYBOARD_KEY numbers shorted.

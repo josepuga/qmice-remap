@@ -1,7 +1,5 @@
 # QMice Remap
 
-## IMPORTANT: This App only works on Wayland
-
 ### I have created this app so that Linux users have a simple and graphic way to map their mouse buttons. This is especially useful for trackballs, which usually have a very absurd layout by default. It is not fair that Windows users have their graphical interfaces created by manufacturers and Linux users are forced to type dozens of commands. NOT EVERYONE HAS TO BE A SYSTEMS ADMINISTRATOR
 
 #### For troubleshooting look [here.](./troubleshooting-EN.md)

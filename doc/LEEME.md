@@ -1,7 +1,5 @@
 # QMice Remap
 
-## IMPORTANTE: Esta App sólo funciona en Wayland
-
 ### He creado esta app, para que los usuarios de Linux tengamos una forma sencilla y gráfica de poder mapear los botones del ratón, esto es especialmente útil en los trackball, que suelen tener una distribución muy absurda por defecto. No es justo que los usuarios de Windows tengan sus interfaces gráficas creadas por los fabricantes y los usuarios Linux nos veamos obligados a teclear decenas de comandos. NO TODO EL MUNDO TIENE QUE SER UN ADMINISTRADOR DE SISTEMAS
 
 #### Para resolución de problemas mira [aquí.](./troubleshooting-ES.md)

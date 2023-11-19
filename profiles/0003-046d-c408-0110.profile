@@ -1,4 +1,4 @@
-# Profile file for pugamice-remap.
+# Profile file for qmice-remap.
 #
 # Read tutorial on github.
 

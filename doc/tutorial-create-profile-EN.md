@@ -4,37 +4,11 @@
 
 In this tutorial, we are going to create a profile for the Kensington Expert Mouse as sample.
 
-## The 'easy' part
+Wen finish, copy the profile to your **$HOME/.config/qmice-remap/profiles** directory.
 
-Open with your favorite editor the **template.profile** file. <http://github.com/josepuga/qmice-remap/assets/template.profile>
+## Getting the device number
 
-Open a system console.
-
-```bash
-cat /proc/bus/input/devices > /tmp/devices.logs
-```
-
-Open /tmp/devices.log and search until you see your device. In this case:
-
-![Input Devices](./images/input-devices.png)
-
-The only important data is the yellow one.
-
-Copy Bus, Vendor, Product and Version to **template.profile**.
-
-![id Section](./images/id-section.png)
-
-On info section:
-
-- The device name.
-- (optional). Your name as uploader.
-- (optional). Any comment about the device. I.e. Button 5 only works in Windows. (I'm jocking, this model only has 4 buttons). The comment should be in ONLY ONE LINE.
-
-![info Section](./images/info-section.png)
-
-## The 'hard' part
-
-Now we need to backup the default buttons configuration before any mapping. The utility **evtest** must be installed on your system. Another command in the system console:
+Linux assign an unique id to every device. Not always is the same, it could change after reboot. We need to know wich device number has our mouse. Open a system console:
 
 ```bash
 sudo evtest
@@ -42,11 +16,35 @@ sudo evtest
 
 ![evtest](./images/evtest.png)
 
-Evtest is asking what event to handle. **Is the event number in devices.logs before**. In this case 11. Type the number and now you will enter in an interactive mode. Click all your buttons one by one, and anotatte any event in the **default buttons** section in **template.profile**. (In order from smallest value to biggest **THIS IS VERY IMPORTANT**).
+The program shows a list with all your devices. Take note of your mouse id (in our example is 11). We can exit pressing CTRL+C
 
-![evtest testing](./images/evtest-testing.png)
+## The 'easy' part
 
-![default buttons Section](./images/default-buttons-section.png)
+A shell script will do almost all the job. Download it from <http://github.com/josepuga/qmice-remap/scripts/create-profile.sh>
+
+The script needs sudo privileges and will check all requisites before start. **Change de number 11 for your device id**.
+
+```bash
+sudo ./create-profile.sh 11
+```
+
+![Create profile script](./images/create-profile-script.png)
+
+Click your mouse buttons. Don't worry if you repeat some of them. Is more important **to not press 2 or more together**. At the end check if the number buttons recorded is the same of your mouse buttons.
+
+Open with your favorite editor the file generated on /tmp
+
+![Profile generate](./images/profile-generated.png)
+
+There are few things to do:
+
+- (optional). **uploader=** Type your nick or name.
+- (optional). **comment=** Any necessary comment about the device. The comment should be in only one line. Other lines will be ignored.
+- **image=** This parameter is mandatory as I explain in the next section.
+
+---
+
+> **_NOTE:_**  There is no magic way to know wich one is your button number 1, 2, 3, ... The numbers inside **[default buttons]** could be 90007, 90023 or whatever. Leave the list sorted, and set the button 1 the fist line, and so on. Its easy to match with your real mouse because every BTN_XXX tag is different (In the sample are 2 equals because has been remaped before)
 
 ## The 'funny' part
 
@@ -68,7 +66,7 @@ Upload the picture and encode it.Copy the result text, and paste on gui section,
 
 ## Final: Copying and publishing the file
 
-Rename the template to other name and copy it to your **$HOME/.config/pugamice-remap/**. The name is up to you. The extension must be **.profile**. However, to avoid name conflicts. I suggest use the formula bus-vendor-product-version: 0003-047d-1020-0111.profile
+Copy it to **$HOME/.config/qmice-remap/profiles**.  The extension must be **.profile**. To avoid name conflicts. I suggest use the name bus-vendor-product-version: 0003-047d-1020-0111.profile
 
 At this time I dont have any repository, and I don't think it's necessary for every user to have a GitHub account to send the file like a post.
 

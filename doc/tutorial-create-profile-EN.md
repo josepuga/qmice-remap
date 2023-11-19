@@ -20,7 +20,7 @@ The program shows a list with all your devices. Take note of your mouse id (in o
 
 ## The 'easy' part
 
-A shell script will do almost all the job. Download it from <http://github.com/josepuga/qmice-remap/scripts/create-profile.sh>
+A shell script will do almost all the job. Download it from <https://github.com/josepuga/qmice-remap/blob/main/scripts/create-profile.sh>
 
 The script needs sudo privileges and will check all requisites before start. **Change de number 11 for your device id**.
 
@@ -44,7 +44,7 @@ There are few things to do:
 
 ---
 
-> **_NOTE:_**  There is no magic way to know wich one is your button number 1, 2, 3, ... The numbers inside **[default buttons]** could be 90007, 90023 or whatever. Leave the list sorted, and set the button 1 the fist line, and so on. Its easy to match with your real mouse because every BTN_XXX tag is different (In the sample are 2 equals because has been remaped before)
+> **_NOTE:_** There is no magic way to know wich one is your button number 1, 2, 3, ... The numbers inside **[default buttons]** could be 90007, 90023 or whatever. Leave the list sorted, and set the button 1 the fist line, and so on. Its easy to match with your real mouse because every BTN_XXX tag is different (In the sample are 2 equals because has been remaped before)
 
 ## The 'funny' part
 
@@ -66,7 +66,7 @@ Upload the picture and encode it.Copy the result text, and paste on gui section,
 
 ## Final: Copying and publishing the file
 
-Copy it to **$HOME/.config/qmice-remap/profiles**.  The extension must be **.profile**. To avoid name conflicts. I suggest use the name bus-vendor-product-version: 0003-047d-1020-0111.profile
+Copy it to **$HOME/.config/qmice-remap/profiles**. The extension must be **.profile**. To avoid name conflicts. I suggest use the name bus-vendor-product-version: 0003-047d-1020-0111.profile
 
 At this time I dont have any repository, and I don't think it's necessary for every user to have a GitHub account to send the file like a post.
 
